@@ -1,0 +1,90 @@
+{
+  "name": "rime-formatter",
+  "displayName": "Rime formatter",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxl66566/rime-formatter"
+  },
+  "description": "VS Code extension for formatting Rime dictionary files and custom phrases",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:dict-yaml",
+    "onLanguage:custom-phrase"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "dict-yaml",
+        "filenamePatterns": [
+          "*.dict.yaml",
+          "*.dict.yml"
+        ],
+        "aliases": [
+          "Dictionary YAML"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "custom-phrase",
+        "filenames": [
+          "custom_phrase.txt"
+        ],
+        "aliases": [
+          "Custom Phrase"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dict-yaml",
+        "scopeName": "source.yaml",
+        "path": "./syntaxes/yaml.tmLanguage.json"
+      }
+    ],
+    "configuration": {
+      "title": "Rime formatter",
+      "properties": {
+        "rime-formatter": {
+          "type": "object",
+          "properties": {
+            "sort_by": {
+              "type": "string",
+              "description": "Sort by spell or weight. Default is spell.",
+              "enum": [
+                "spell",
+                "weight"
+              ]
+            }
+          },
+          "required": []
+        }
+      }
+    }
+  },
+  "scripts": {
+    "p": "tsc -p ./ && vsce package",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.41.0",
+    "@vscode/vsce": "^3.2.1",
+    "typescript": "^5.5.4"
+  },
+  "main": "./out/extension",
+  "author": "lxl66566",
+  "publisher": "lxl66566",
+  "license": "MIT",
+  "private": false,
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
+}

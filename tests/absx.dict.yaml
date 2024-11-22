@@ -1,0 +1,18 @@
+# Rime dictionary
+# encoding: utf-8
+# 我自己手做的词库，符合我本人打字习惯。至于词频那当然是瞎写的。
+# 这里由于测试，删除了大部分的词。
+# 详情：https://github.com/lxl66566/rime
+
+---
+name: absx
+version: "2024-11-21"
+sort: by_weight
+...
+
+爱心屋	ai xin wu	10000
+摆烂	bai lan	10000
+长按	chang an	10000
+尝鲜	chang xian	10000
+即食	ji shi	10000
+既视	ji shi	1000

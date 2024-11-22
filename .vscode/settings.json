@@ -1,0 +1,11 @@
+// for testing
+{
+  "[dict-yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "lxl66566.rime-formatter"
+  },
+  "[custom-phrase]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "lxl66566.rime-formatter"
+  }
+}
