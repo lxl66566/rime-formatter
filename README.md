@@ -6,7 +6,7 @@ VS Code 插件，用于格式化 Rime 词库文件（`*.dict.yaml`）和自定�
 
 ## 使用方法
 
-1. 安装插件 anyformatter：<https://marketplace.visualstudio.com/items?itemName=lxl66566.rime-formatter>。
+1. 安装插件 Rime formatter：<https://marketplace.visualstudio.com/items?itemName=lxl66566.rime-formatter>。
 2. 启用插件
    ```json
    "[dict-yaml]": {

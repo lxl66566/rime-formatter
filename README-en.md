@@ -6,7 +6,7 @@ VS Code extension for formatting Rime dictionary files (`*.dict.yaml`) and custo
 
 ## Usage
 
-1. Install the extension anyformatter: <https://marketplace.visualstudio.com/items?itemName=lxl66566.rime-formatter>.
+1. Install the extension Rime formatter: <https://marketplace.visualstudio.com/items?itemName=lxl66566.rime-formatter>.
 2. Enable the plugin
    ```json
    "[dict-yaml]": {
